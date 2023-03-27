@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "left-navigation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/leftNavigation/LeftNavigationWebPart.js",
+          "manifest": "./src/webparts/leftNavigation/LeftNavigationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LeftNavigationWebPartStrings": "lib/webparts/leftNavigation/loc/{locale}.js"
+  }
+}
