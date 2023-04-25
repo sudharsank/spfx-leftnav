@@ -38,9 +38,32 @@ export default class LeftNavigationWebPart extends BaseClientSideWebPart<ILeftNa
 		ReactDom.render(element, this.domElement);
 	}
 
+    private hideControls(classnames: string): void {
+        let style: string;
+        style = `
+            ${classnames}
+            {
+                display: none !important;
+            }
+            .CanvasSection--read .ControlZone {
+                margin-top: 0px;
+            }
+            div[data-automation-id='CanvasZone'] > div {
+                width: 100%;
+                max-width: unset !important;
+            }
+            `;
+        const head = document.head || document.getElementsByTagName('head')[0];
+        const styletag = document.createElement('style');
+        styletag.type = 'text/css';
+        styletag.appendChild(document.createTextNode(style));
+        head.appendChild(styletag);
+    }
+
 	protected async onInit(): Promise<void> {
 		await super.onInit();
 		this._sp = spfi().using(SPFx(this.context));
+        this.hideControls('div[Id$="CommentsWrapper"], div[data-automation-id="pageHeader"]');
 		return this._getEnvironmentMessage().then(message => {
 			this._environmentMessage = message;
 		});
