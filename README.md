@@ -1,10 +1,10 @@
-# left-nav
+# Custom Left Navigation
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Custom left navigation using SharePoint lists.
 
-[picture of the solution in action, if possible]
+![Left Navigation](./assets/Left-Nav.png)
 
 ## Used SharePoint Framework Version
 
@@ -17,22 +17,14 @@ Short summary on functionality and used technologies.
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
-
-> Any special pre-requisites?
-
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution     | Author(s)                                               |
+| -----------  | ------------------------------------------------------- |
+| spfx-leftnav | Sudharsan (https://spknowledge.com/2023/04/25/spfx-custom-left-navigation-for-sharepoint-online/) |
 
-## Version history
+## Preview
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
 
 ## Disclaimer
 
@@ -46,23 +38,9 @@ Short summary on functionality and used technologies.
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-  - **gulp serve**
+  - **npm run serve**
 
 > Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
 ## References
 
